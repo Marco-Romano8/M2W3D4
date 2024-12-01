@@ -1,0 +1,60 @@
+#container {
+    background-color: rgb(102, 101, 101);
+    border-radius: 25px;
+}
+header {
+    font-size: 2em;
+    background-color: #7112f6c7;
+    border-radius: 25px;
+    color: rgb(228, 192, 13);
+}
+
+h1,h2,h5,p {
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1em 0;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    order: solid 5px green;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    padding: 2em;
+    background-color: white;
+    gap: 40px;
+}
+
+a {
+    color: rgb(228, 192, 13);
+    text-decoration: none;
+}
+
+.prezzo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #7112f6ca;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 2em;
+}
+
+button {
+    margin: 1em;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px;
+}

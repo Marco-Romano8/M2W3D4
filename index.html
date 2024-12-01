@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <title>E-COMMERCE</title>
+</head>
+<body>
+    <button type="button" onclick="changeBack('dark')">Dark</button>
+    <button type="button" onclick="changeBack('default')">Light</button>
+    <div id="container">
+    <header>
+        <h1 id="titolo">Roma's</h1>
+        <button type="button" onclick="modTitolo()">
+            Change Title
+        </button>
+    </header>
+    <main>
+        <button type="button" onclick="newCss()">Change Color Link</button>
+        <button type="button" onclick="hiddenImg()">Show/Hidden</button>
+        <button type="button" onclick="changeColor()">Change Color Price</button>
+        <div id="content">
+            <div class="card">
+                <img src="assets/pallone.png" alt="Pallone Basket">
+                <a class="amazon" href="https://www.amazon.it/Wilson-Pallone-Basketball-Utilizzo-Outdoor/dp/B091LFQN2Q?crid=23ACH5UJ8YF7D&dib=eyJ2IjoiMSJ9.zhqQmllWapxLFLbdzWDerNSSuvOzV-rr40LQ_SW0_c4idqRq2kZjUhlKpxtxf87Y0m2Ks0D8vwv5sfct-htMp_TqCunmkCkI5pLAF2Sfj_jmjTqWwwrIyPMLPpioQ6utqvtBT_yyz0GLWs3Zz4Xj622CxZfByJBkM7BpTG-bNyD300pvQ9m80w9XKPmBHM_6o-u-U9kVepNkz3uUmoiLuuYbWTp5OdpEpFdF7V1UNrQ0VHgK0XMnvijmxvNV5ny4IXwR9vSztFL9r9sM75YvXs-4gNCx8Kd4x693C487GXo.tOx5c1z4LVTCnJ6dp0nykGMF1vd5MOdImel83eQH-pI&dib_tag=se&keywords=basketball+ball&qid=1732834589&s=sports&sprefix=basket%2Csporting%2C164&sr=1-4"><h2>BasketBall</h2></a>
+                <p>Wilson Pallone da Basket</p> 
+                <div class="price">
+                    <h2>Prezzo: 24,50€</h2>
+                </div>
+                <input type="text" placeholder="Scrivi un commento..." style="height: 100%; width: 100%;">
+            </div>
+            <div class="card">
+                <img src="assets/cappello.png" alt="Cappello Cavaliers">
+                <a class="amazon" href="https://www.amazon.it/New-Era-League-Clecav-Berretto/dp/B079KGNGDL/260-9724814-7818519?pd_rd_w=lgH1H&content-id=amzn1.sym.547ce61e-33fb-4876-9984-dcdd97a99f53&pf_rd_p=547ce61e-33fb-4876-9984-dcdd97a99f53&pf_rd_r=9QM829035FMC7QEN8M3X&pd_rd_wg=DLb3O&pd_rd_r=c300a4d6-e29d-4c5d-8c17-ba56f177284f&pd_rd_i=B079KGNGDL&psc=1"><h2>Cavs Cap</h2></a>
+                <p>New Era Men's 9forty cap Men's cap</p> 
+                <div class="price">
+                    <h2>Prezzo: 17,95€</h2>
+                </div>
+                <input type="text" placeholder="Scrivi un commento..." style="height: 100%; width: 100%;">
+            </div>
+            <div class="card">
+                <img src="assets/mensola.png" alt="Mensola Da Muro">
+                <a class="amazon" href="https://www.amazon.it/WOLTU-RG9365ws-Rettangolare-Decorazione-Cameretta/dp/B0814R28WR?crid=1MMVK3RUCSJWN&dib=eyJ2IjoiMSJ9.duuQ4fip8S8V9XY9c9cJhnh-fxYxF3HJ7kaBKku1TOstyU9i8dIbKh6L18FHSKyEZvxqJRx4bUo_RyDIEfQWM_GjDB9hIXMzv44HWKcQGusqfZA1rm3yOJBRadhz7gl78aKAw8WIb6UbgqxQeMz84SJt0IBabLpuToJTb39Q4JdzdZlJ1PPTCkoy3U0H-bWqoztsoPc9W4PJ0XW7j2ZxALGvLHAQ9MDqxxsCGFjtfGXkcUWLLmHTcJMPA4uxdRehK3c7F7s3Ax4GdK7Ka0kN7LeRHZBXSE_ecZPaBI3-1OQ.cAd8uyfO1p8M_v8Lm48QgR8UcqOduU5trChcsIuGGWg&dib_tag=se&keywords=mensola+da+muro&qid=1732836769&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=mensola%2Caps%2C126&sr=8-6"><h2>Mensola Da Muro</h2></a>
+                <p>Mensola da Muro Rettangolare Scaffale Libreria a Parete </p> 
+                <div class="price">
+                    <h2>Prezzo: 15,29€</h2>
+                </div>
+                <input type="text" placeholder="Scrivi un commento..." style="height: 100%; width: 100%;">
+            </div>
+            <div class="card">
+                <img src="assets/chitarra.png" alt="Chitarra Classica">
+                <a class="amazon" href="https://www.amazon.it/chitarra-acustica-classica-pollici-bambini/dp/B00O1QJ6KE?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2R3AHWFM80LP&dib=eyJ2IjoiMSJ9.Krq-P_0Z66I3qVfziNLTI1SBwvxfTxu-aZyABARhdssg6ZvBCgxfAnOkfYj096310QxqMGbuDLVrxQ2yuKxSXe2nZrPavNTUgCxho1L397nLD2LxL8Bq-lRShZFbvrujdF-_Z3MqAGMlFDCkaUsSzoRbEWfee4GVWlserZJuafJX-i--JLmIHPdFoM1knsS66HSPVk57SaS_1pvhvQhxRNa7HrXWximWXkkgXL9afWjRUy8pyanSdHz-ost4CJWG03ExEj2kQNZVK05MFXMrPFQtuIDLXEDfT1JoslpOHRA.WWt2O7bvCkX2UqUtxAq-olwa4SObHUDqbjIpVHqzRRs&dib_tag=se&keywords=chitarra&qid=1732834616&sprefix=chitarra%2Caps%2C120&sr=8-5"><h2>Chitarra Acustica Classica</h2></a>
+                <p>Music Alley chitarra acustica classica </p>
+                <div class="price">
+                    <h2>Prezzo: 33,14€</h2>
+                </div>
+                <input type="text" placeholder="Scrivi un commento..." style="height: 100%; width: 100%;">
+            </div>
+            <div class="card">
+                <img src="assets/mouse.png" alt="Mouse gaming">
+                <a class="amazon" href="https://www.amazon.it/Razer-DeathAdder-Essential-essenziale-sensore/dp/B092R71V77/?_encoding=UTF8&pd_rd_w=4mrqJ&content-id=amzn1.sym.dc959f0b-7c0b-4fe7-b7b6-6afd9dd34393&pf_rd_p=dc959f0b-7c0b-4fe7-b7b6-6afd9dd34393&pf_rd_r=DWKQ4A00CHSWWXZT4WMP&pd_rd_wg=16jBX&pd_rd_r=fea305dc-4b98-4132-9ff0-6a11b77bded3&ref_=pd_hp_d_atf_dealz_mlc&th=1"><h2 >Mouse Gaming</h2></a>
+                <p>Razer DeathAdder Essential (2021)</p> 
+                <div class="price">
+                    <h2>Prezzo: 19,99€</h2>
+                </div>
+                <input type="text" placeholder="Scrivi un commento..." style="height: 100%; width: 100%;">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h5>Roma's Shop</h5>
+        <p id="link">Via Di Qui <button type="button" onclick="changeLink()">New Shop</button></p>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
